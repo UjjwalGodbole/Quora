@@ -1,0 +1,17 @@
+<%- include("includes/header.ejs") %>
+<%- include("includes/nav.ejs") %>
+<body>
+    <div class="posts_container" style="padding: 30px !important;">
+        <div class="edit_delete" style="align-self:self-end;">
+            <a href="/posts"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        
+        <form action="/posts/<%= post.id %>?_method=patch" method="post">
+            <h1>Username: <%= post.username %></h1>
+            <textarea cols="50" rows="10" name="content" placeholder="<%= post.content %>"></textarea>
+            <input type="text" name="imgurl" placeholder="<%= post.imgurl %>">
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+<%- include("includes/footer.ejs") %>

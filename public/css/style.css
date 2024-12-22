@@ -1,0 +1,156 @@
+html body{
+    height: 100vh;
+    background-color: #181818;
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+    color: #e6e7e8;
+   
+}
+footer{
+    position: sticky;
+    margin-top: 100px;
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    color: #f53936;
+    height: 63px;
+    width: 100%;
+    background-color: #262626;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    padding-left: 20px;
+}
+/* posts */
+.posts_container{
+    background-color: #262626;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+.bottom{
+    height: 35px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #181818;
+    align-self: self-start;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+}
+.bottom  i{
+    padding: 0 20px;
+
+}
+
+.createpost{
+    height: 70px;
+    width: 40%;
+    background-color: #262626;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    align-items: center;
+}
+.createpost a{
+    text-decoration: none;
+    color:#e6e7e8;
+}
+.createpost p i{
+    margin-left: 10px;
+}
+.posts_container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.posts_container form input{
+    color: #e6e7e8;
+    text-decoration: none;
+    height: 50px;
+    width: 100%;
+    background-color: #181818;
+    border-radius: 20px;
+    border: 1px solid #181818;
+    padding: 10px;
+    font-size: 20px;
+}
+.posts_container form textarea{
+    background-color: #181818;
+    color: #e6e7e8;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-decoration: none;
+    border: 1px solid #e6e7e8;
+    font-size: 20px;
+    padding: 10px;
+}
+.posts_container form button{
+    background-color: #4894fd;
+    text-decoration: none;
+    height: 40px;
+    font-size: 20px;
+    color: #242424;
+    border-radius: 8px;
+    font-weight: bolder; 
+    margin-top: 40px;
+    align-self: center;
+    cursor: pointer;
+    margin-bottom: -20px;
+}
+
+.control i{
+    margin-right: 15px;
+    font-size: 18px;
+    opacity: .5;
+}
+.control i:hover{
+    opacity: 1;
+    scale: 1.2;
+}
+.edit_delete a{
+    text-decoration: none;
+    color:#e6e7e8;
+    font-size: 18px;
+    opacity: .5;
+}
+.edit_delete a:hover{
+    opacity: 1;
+    scale: 1;
+}
+.edit_delete form button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #e6e7e8;
+    margin: 0;
+    display: inline;
+    height: 0;
+    width: 0;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}

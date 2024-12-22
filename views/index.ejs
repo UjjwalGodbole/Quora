@@ -1,0 +1,37 @@
+<%- include("includes/header.ejs") %>
+<%- include("includes/nav.ejs") %>
+<body>
+<div class="main">
+    <div class="createpost">
+        <p>Ask<i class="fa-solid fa-question"></i></p>
+        <p>Answer<i class="fa-solid fa-pen-to-square"></i></p>
+        <p>Post <a href="/posts/new"><i class="fa-solid fa-pen"></i></a></p>
+    </div>
+    <div class="posts">
+    <% for(post of posts){ %>
+    <div class="posts_container">
+        <div class="edit_delete" style="align-self: self-end;">
+            <div class="control">
+            <a href="/posts/<%= post.id %>"><i class="fa-regular fa-eye"></i></a>
+            <a href="/posts/<%= post.id %>/edit"><i class="fa-solid fa-pen-to-square"></i></a>
+            <form  class="control" method="POST" action="/posts/<%= post.id %>?_method=DELETE">
+                <button><i class="fa-solid fa-xmark"></i></button>
+            </form>
+        </div>
+        </div>
+        <h2 style="align-self: start;margin-top: -10px;"><%= post.username %></h2>
+        <p style="align-self: start;"><%= post.content %></p>
+        <img src="<%= post.imgurl %>" alt="">
+        <div class="bottom">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-comment"></i>
+            <i class="fa-solid fa-share"></i>
+           <i class="fa-solid fa-ellipsis" style="margin-left: auto;"></i>
+
+        </div>
+        </div>
+        </div>
+</div>
+    <% } %>
+</body>
+<%- include("includes/footer.ejs") %>

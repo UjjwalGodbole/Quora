@@ -1,0 +1,16 @@
+<%- include("includes/header.ejs") %>
+<%- include("includes/nav.ejs") %>
+
+<body>
+    <div class="posts_container" style="padding: 30px !important;">
+        <div class="edit_delete" style="align-self:self-end;">
+            <a href="/posts"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <form action="/posts" method="post">
+            <input style="margin-top: 10px;" type="text" name="username" placeholder="Enter your Username">
+            <textarea cols="50" rows="10" name="content" placeholder="Type your content!"></textarea>
+            <input type="text" name="imgurl" placeholder="paste your image url...">
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
